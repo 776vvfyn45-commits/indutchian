@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Indutchian emblem">
+  <defs>
+    <path id="petal" d="M60,70 C50,55 50,33 60,20 C70,33 70,55 60,70 Z"/>
+  </defs>
+  <!-- stem + tulip leaves (Dutch cue) -->
+  <path d="M60,68 L60,104" stroke="#0E5C63" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M60,90 C49,89 43,95 41,104 C52,104 58,99 60,90 Z" fill="#0E5C63"/>
+  <path d="M60,90 C71,89 77,95 79,104 C68,104 62,99 60,90 Z" fill="#0E5C63"/>
+  <!-- lotus/tulip fusion petals (outer to inner) -->
+  <use href="#petal" transform="rotate(-70 60 70)" fill="#0E5C63"/>
+  <use href="#petal" transform="rotate(70 60 70)" fill="#0E5C63"/>
+  <use href="#petal" transform="rotate(-38 60 70)" fill="#C9A227"/>
+  <use href="#petal" transform="rotate(38 60 70)" fill="#C9A227"/>
+  <use href="#petal" fill="#F26722"/>
+</svg>

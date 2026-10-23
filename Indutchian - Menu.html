@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Indutchian Fusion Food</title>
+<meta name="description" content="The full Indutchian menu — Indian street food meets Dutch snacks, from samosas and biryani to bitterballen and stroopwafels.">
+<link rel="canonical" href="https://www.indutchian.com/Indutchian%20-%20Menu.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menu | Indutchian Fusion Food">
+<meta property="og:description" content="Indian street food meets Dutch snacks, one fusion menu.">
+<meta property="og:url" content="https://www.indutchian.com/Indutchian%20-%20Menu.html">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FAF3E7;--ink:#1A1A2E}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',sans-serif;color:#f0e6d6;background:#171310;line-height:1.6}
+  h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15}
+  a{color:inherit}
+  section{padding:70px 8vw}
+  .container{max-width:1100px;margin:0 auto}
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:14px 8vw;background:rgba(10,18,32,.9);backdrop-filter:blur(8px)}
+  .logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1}
+  .logo .lw{font-family:'Playfair Display',serif;font-weight:800;font-size:1.4rem;color:var(--cream)}
+  .logo .lu{display:flex;gap:3px;margin-top:3px}
+  .logo .lu i{display:block;width:40px;height:3px;border-radius:2px}
+  .logo .lu i:first-child{background:linear-gradient(90deg,#F26722,#fff,#138808)}
+  .logo .lu i:last-child{background:linear-gradient(90deg,#AE1C28,#fff,#21468B)}
+  nav ul{display:flex;gap:24px;list-style:none;align-items:center}
+  nav ul a{color:var(--cream);text-decoration:none;font-size:.9rem;transition:color .2s}
+  nav ul a:hover{color:#E6C15C}
+  .nav-cta{background:linear-gradient(135deg,#C9A227,#E6C15C);color:#0E244A !important;padding:8px 18px;border-radius:30px;font-weight:600}
+  @media(max-width:680px){nav ul li:not(.keep){display:none}}
+  /* MENU HERO */
+  .menu-hero{background:radial-gradient(circle at 28% 45%,#2a2016,#120d0a 68%);color:#f3ece0;padding:120px 8vw 66px;position:relative;overflow:hidden}
+  .menu-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 50%,rgba(224,167,60,.14),transparent 46%)}
+  .menu-hero .mh-row{display:flex;gap:44px;align-items:center;justify-content:center;flex-wrap:wrap;max-width:1080px;margin:0 auto;position:relative;z-index:2}
+  .menu-hero .mh-text{flex:1 1 320px;max-width:500px}
+  .menu-hero .eyebrow2{color:#E0A73C;font-weight:600;letter-spacing:4px;text-transform:uppercase;font-size:.8rem;margin-bottom:12px}
+  .menu-hero h1{font-size:clamp(2.4rem,6vw,3.8rem);font-weight:800;margin-bottom:14px;color:#f7f0e4}
+  .menu-hero h1 span{color:#E0A73C}
+  .menu-hero p{max-width:460px;margin:0 0 22px;color:rgba(243,236,224,.82)}
+  .menu-hero .backlink{display:inline-block;color:#E0A73C;text-decoration:none;font-size:.9rem;border:1px solid rgba(224,167,60,.5);padding:9px 20px;border-radius:30px;transition:background .2s}
+  .menu-hero .backlink:hover{background:rgba(224,167,60,.12)}
+  .menu-hero .mh-photo{flex:0 0 auto;width:min(44vw,380px)}
+  .menu-hero .mh-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;-webkit-mask-image:radial-gradient(circle at 50% 48%,#000 55%,transparent 76%);mask-image:radial-gradient(circle at 50% 48%,#000 55%,transparent 76%)}
+  /* MENU / FOOD SHOWCASE */
+  .menu{background:transparent;color:#f0e6d6}
+  .menu .m-head{display:none}
+  .cat{margin-top:8px}
+  .cat + .cat{margin-top:52px}
+  .cat-title{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+  .cat-title h3{font-family:'Playfair Display',serif;font-size:1.5rem;color:#f3ece0;white-space:nowrap}
+  .cat-title .line{flex:1;height:1px;background:rgba(243,236,224,.16)}
+  .cat-title .cnt{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:#E0A73C}
+  .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px}
+  .fcard{background:#1d1811;border:1px solid rgba(224,167,60,.14);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .2s,box-shadow .2s}
+  .fcard:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(0,0,0,.30)}
+  .fthumb{position:relative;height:158px;background:#20202a}
+  .fthumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .fthumb img.noimg{display:none}
+  .fthumb .fallback{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:2.6rem;background:radial-gradient(circle at 50% 38%,#2a2233,#141118)}
+  .fthumb img.noimg + .fallback{display:flex}
+  .fflag{position:absolute;top:10px;left:10px;z-index:2;font-size:.62rem;letter-spacing:1px;text-transform:uppercase;background:rgba(0,0,0,.55);color:#E6C15C;padding:3px 9px;border-radius:20px;backdrop-filter:blur(2px)}
+  .fbody{padding:15px 17px 17px}
+  .fbody h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:#E6C15C;margin-bottom:6px}
+  .fbody p{font-size:.84rem;color:rgba(250,243,231,.72);margin-bottom:12px;line-height:1.5}
+  .fprice{font-weight:600;color:#E6C15C;font-size:.95rem}
+  /* FOOTER */
+  footer{background:#0a1220;color:rgba(250,243,231,.7);text-align:center;padding:34px 8vw;font-size:.9rem}
+  footer .logo{margin-bottom:10px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="Indutchian%20-%20Website.html" class="logo"><span class="lw">Indutchian</span><span class="lu"><i></i><i></i></span></a>
+  <ul>
+    <li><a href="Indutchian%20-%20Website.html">Home</a></li>
+    <li><a href="Indutchian%20-%20Website.html#music">Music</a></li>
+    <li class="keep"><a href="Indutchian%20-%20Website.html#contact" class="nav-cta">Book Us</a></li>
+  </ul>
+</nav>
+
+<header class="menu-hero">
+  <div class="mh-row">
+    <div class="mh-text">
+      <div class="eyebrow2">The Kitchen</div>
+      <h1>Check out our<br>gourmet <span>menu</span></h1>
+      <p>Tandoor, curries, street food, Dutch classics, sweets and drinks, everything Indutchian brings to the table.</p>
+      <a href="Indutchian%20-%20Website.html" class="backlink">← Back to home</a>
+    </div>
+    <div class="mh-photo">
+      <img src="assets/food-hero-plate.jpg" alt="Indian and Dutch snack platter">
+    </div>
+  </div>
+</header>
+
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="m-head">
+      <div class="eyebrow">The Menu</div>
+      <h2>From dosa to stroopwafel.</h2>
+      <p class="sub">Two kitchens, one very full table, tandoor, curries, street food, Dutch classics, sweets and drinks from India and the Netherlands.</p>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Tandoori & Grills</h3><span class="line"></span><span class="cnt">4 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/chicken-tikka.jpg" alt="Chicken Tikka" onerror="this.classList.add('noimg')"><div class="fallback">🍢</div></div>
+          <div class="fbody"><h4>Chicken Tikka</h4><p>Charred, yoghurt-marinated chicken from the tandoor.</p><span class="fprice">€8.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/paneer-tikka.jpg" alt="Paneer Tikka" onerror="this.classList.add('noimg')"><div class="fallback">🍢</div></div>
+          <div class="fbody"><h4>Paneer Tikka</h4><p>Spiced grilled cottage cheese and peppers.</p><span class="fprice">€7.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/tandoori-chicken.jpg" alt="Tandoori Chicken" onerror="this.classList.add('noimg')"><div class="fallback">🍢</div></div>
+          <div class="fbody"><h4>Tandoori Chicken</h4><p>Classic clay-oven chicken, smoky and spiced.</p><span class="fprice">€9.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/seekh-kebab.jpg" alt="Seekh Kebab" onerror="this.classList.add('noimg')"><div class="fallback">🍢</div></div>
+          <div class="fbody"><h4>Seekh Kebab</h4><p>Minced spiced meat skewers, flame-grilled.</p><span class="fprice">€8.0</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Curries & Mains</h3><span class="line"></span><span class="cnt">5 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/butter-chicken.jpg" alt="Butter Chicken" onerror="this.classList.add('noimg')"><div class="fallback">🍛</div></div>
+          <div class="fbody"><h4>Butter Chicken</h4><p>Creamy tomato-butter gravy, tender chicken.</p><span class="fprice">€10.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/rogan-josh.jpg" alt="Rogan Josh" onerror="this.classList.add('noimg')"><div class="fallback">🍛</div></div>
+          <div class="fbody"><h4>Rogan Josh</h4><p>Aromatic Kashmiri lamb curry.</p><span class="fprice">€11.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/dal-makhani.jpg" alt="Dal Makhani" onerror="this.classList.add('noimg')"><div class="fallback">🍛</div></div>
+          <div class="fbody"><h4>Dal Makhani</h4><p>Slow-cooked black lentils, butter and cream.</p><span class="fprice">€7.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/chole-bhature.jpg" alt="Chole Bhature" onerror="this.classList.add('noimg')"><div class="fallback">🍛</div></div>
+          <div class="fbody"><h4>Chole Bhature</h4><p>Spiced chickpeas with fluffy fried bread.</p><span class="fprice">€7.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/chicken-biryani.jpg" alt="Chicken Biryani" onerror="this.classList.add('noimg')"><div class="fallback">🍛</div></div>
+          <div class="fbody"><h4>Chicken Biryani</h4><p>Fragrant layered rice, spices and chicken.</p><span class="fprice">€10.5</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Street Food & Snacks</h3><span class="line"></span><span class="cnt">8 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/masala-dosa.jpg" alt="Masala Dosa" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Masala Dosa</h4><p>Crispy rice crêpe, spiced potato, chutney.</p><span class="fprice">€6.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/vada-pav.jpg" alt="Vada Pav" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Vada Pav</h4><p>Mumbai's spiced potato slider.</p><span class="fprice">€4.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/pani-puri.jpg" alt="Pani Puri" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Pani Puri</h4><p>Crisp shells, tangy spiced water.</p><span class="fprice">€5.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/samosa-chaat.jpg" alt="Samosa Chaat" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Samosa Chaat</h4><p>Samosa, chickpeas, yoghurt, tamarind.</p><span class="fprice">€5.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/bitterballen.jpg" alt="Bitterballen" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Bitterballen</h4><p>Crispy Dutch beef bites, mustard dip.</p><span class="fprice">€5.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/kroket.jpg" alt="Kroket" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Kroket</h4><p>Golden Dutch ragout croquette.</p><span class="fprice">€4.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/frikandel.jpg" alt="Frikandel" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Frikandel</h4><p>Classic Dutch deep-fried sausage.</p><span class="fprice">€4.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/kaassouffle.jpg" alt="Kaassoufflé" onerror="this.classList.add('noimg')"><div class="fallback">🥟</div></div>
+          <div class="fbody"><h4>Kaassoufflé</h4><p>Golden deep-fried Dutch cheese snack.</p><span class="fprice">€4.5</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Dutch Classics</h3><span class="line"></span><span class="cnt">5 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/stamppot.jpg" alt="Stamppot" onerror="this.classList.add('noimg')"><div class="fallback">🇳🇱</div></div>
+          <div class="fbody"><h4>Stamppot</h4><p>Mashed potato with greens and smoked sausage.</p><span class="fprice">€8.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/erwtensoep.jpg" alt="Erwtensoep" onerror="this.classList.add('noimg')"><div class="fallback">🇳🇱</div></div>
+          <div class="fbody"><h4>Erwtensoep</h4><p>Thick Dutch split-pea winter soup.</p><span class="fprice">€6.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/haring.jpg" alt="Haring" onerror="this.classList.add('noimg')"><div class="fallback">🇳🇱</div></div>
+          <div class="fbody"><h4>Haring</h4><p>Raw herring, onions, the Dutch way.</p><span class="fprice">€5.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/kibbeling.jpg" alt="Kibbeling" onerror="this.classList.add('noimg')"><div class="fallback">🇳🇱</div></div>
+          <div class="fbody"><h4>Kibbeling</h4><p>Battered fried fish bites, garlic sauce.</p><span class="fprice">€6.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/poffertjes.jpg" alt="Poffertjes" onerror="this.classList.add('noimg')"><div class="fallback">🇳🇱</div></div>
+          <div class="fbody"><h4>Poffertjes</h4><p>Mini fluffy Dutch pancakes, butter and sugar.</p><span class="fprice">€5.5</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Fusion Combos</h3><span class="line"></span><span class="cnt">4 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Fusion</span><img loading="lazy" src="assets/butter-chicken-friet.jpg" alt="Butter Chicken Friet" onerror="this.classList.add('noimg')"><div class="fallback">🍽️</div></div>
+          <div class="fbody"><h4>Butter Chicken Friet</h4><p>Loaded fries, butter chicken, crispy onions.</p><span class="fprice">€9.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Fusion</span><img loading="lazy" src="assets/tandoori-kaas-broodje.jpg" alt="Tandoori Kaas Broodje" onerror="this.classList.add('noimg')"><div class="fallback">🍽️</div></div>
+          <div class="fbody"><h4>Tandoori Kaas Broodje</h4><p>Tandoori paneer & cheese in a Dutch roll.</p><span class="fprice">€7.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Combo</span><img loading="lazy" src="assets/indutchian-combo.jpg" alt="Indutchian Combo" onerror="this.classList.add('noimg')"><div class="fallback">🍽️</div></div>
+          <div class="fbody"><h4>Indutchian Combo</h4><p>Curry, rice, naan and crispy Dutch sides.</p><span class="fprice">€13.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Combo</span><img loading="lazy" src="assets/fusion-thali.jpg" alt="Fusion Thali" onerror="this.classList.add('noimg')"><div class="fallback">🍽️</div></div>
+          <div class="fbody"><h4>Fusion Thali</h4><p>A tasting platter of both kitchens.</p><span class="fprice">€15.0</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Desserts</h3><span class="line"></span><span class="cnt">7 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/gulab-jamun.jpg" alt="Gulab Jamun" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Gulab Jamun</h4><p>Warm milk dumplings in cardamom syrup.</p><span class="fprice">€4.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/jalebi.jpg" alt="Jalebi" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Jalebi</h4><p>Crispy spirals soaked in saffron syrup.</p><span class="fprice">€3.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/rasgulla.jpg" alt="Rasgulla" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Rasgulla</h4><p>Soft spongy cheese balls in syrup.</p><span class="fprice">€3.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/stroopwafel.jpg" alt="Stroopwafel" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Stroopwafel</h4><p>Caramel-filled Dutch waffle, warm.</p><span class="fprice">€3.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/oliebollen.jpg" alt="Oliebollen" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Oliebollen</h4><p>Dutch doughnut balls dusted in sugar.</p><span class="fprice">€3.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/appeltaart.jpg" alt="Appeltaart" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Appeltaart</h4><p>Classic Dutch apple pie, cinnamon and cream.</p><span class="fprice">€4.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Fusion</span><img loading="lazy" src="assets/stroop-gulab.jpg" alt="Stroop-Gulab" onerror="this.classList.add('noimg')"><div class="fallback">🍮</div></div>
+          <div class="fbody"><h4>Stroop-Gulab</h4><p>Our signature, stroopwafel meets gulab jamun.</p><span class="fprice">€5.5</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Ice Cream & Kulfi</h3><span class="line"></span><span class="cnt">3 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/malai-kulfi.jpg" alt="Malai Kulfi" onerror="this.classList.add('noimg')"><div class="fallback">🍨</div></div>
+          <div class="fbody"><h4>Malai Kulfi</h4><p>Saffron-cardamom Indian ice cream.</p><span class="fprice">€4.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/falooda-sundae.jpg" alt="Falooda Sundae" onerror="this.classList.add('noimg')"><div class="fallback">🍨</div></div>
+          <div class="fbody"><h4>Falooda Sundae</h4><p>Rose, vermicelli, basil seeds, ice cream.</p><span class="fprice">€6.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/vanilla-stroop-swirl.jpg" alt="Vanilla Stroop Swirl" onerror="this.classList.add('noimg')"><div class="fallback">🍨</div></div>
+          <div class="fbody"><h4>Vanilla Stroop Swirl</h4><p>Dutch vanilla with a caramel stroop swirl.</p><span class="fprice">€4.5</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Drinks</h3><span class="line"></span><span class="cnt">4 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/masala-chai.jpg" alt="Masala Chai" onerror="this.classList.add('noimg')"><div class="fallback">☕</div></div>
+          <div class="fbody"><h4>Masala Chai</h4><p>Spiced Indian tea, simmered with milk.</p><span class="fprice">€3.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/sweet-lassi.jpg" alt="Sweet Lassi" onerror="this.classList.add('noimg')"><div class="fallback">☕</div></div>
+          <div class="fbody"><h4>Sweet Lassi</h4><p>Cooling yoghurt drink, lightly sweet.</p><span class="fprice">€3.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">India</span><img loading="lazy" src="assets/mango-lassi.jpg" alt="Mango Lassi" onerror="this.classList.add('noimg')"><div class="fallback">☕</div></div>
+          <div class="fbody"><h4>Mango Lassi</h4><p>Alphonso mango and yoghurt blend.</p><span class="fprice">€4.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Netherlands</span><img loading="lazy" src="assets/dutch-koffie.jpg" alt="Dutch Koffie" onerror="this.classList.add('noimg')"><div class="fallback">☕</div></div>
+          <div class="fbody"><h4>Dutch Koffie</h4><p>Rich, dark Dutch-style coffee.</p><span class="fprice">€3.0</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Exotic Signature Drinks</h3><span class="line"></span><span class="cnt">3 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Signature</span><img loading="lazy" src="assets/rose-falooda-shake.jpg" alt="Rose Falooda Shake" onerror="this.classList.add('noimg')"><div class="fallback">🍹</div></div>
+          <div class="fbody"><h4>Rose Falooda Shake</h4><p>Rose, basil seeds, ice cream, dreamy.</p><span class="fprice">€6.5</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Signature</span><img loading="lazy" src="assets/saffron-kesar-cooler.jpg" alt="Saffron Kesar Cooler" onerror="this.classList.add('noimg')"><div class="fallback">🍹</div></div>
+          <div class="fbody"><h4>Saffron Kesar Cooler</h4><p>Saffron, cardamom and chilled sweet milk.</p><span class="fprice">€6.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Signature</span><img loading="lazy" src="assets/stroop-cold-brew.jpg" alt="Stroop Cold Brew" onerror="this.classList.add('noimg')"><div class="fallback">🍹</div></div>
+          <div class="fbody"><h4>Stroop Cold Brew</h4><p>Caramel cold brew topped with cream.</p><span class="fprice">€5.5</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-title"><h3>Jumbo Boxes</h3><span class="line"></span><span class="cnt">4 items</span></div>
+      <div class="fgrid">
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Sharing</span><img loading="lazy" src="assets/jumbo-snack-box.jpg" alt="Jumbo Snack Box" onerror="this.classList.add('noimg')"><div class="fallback">📦</div></div>
+          <div class="fbody"><h4>Jumbo Snack Box</h4><p>Twelve mixed Indo-Dutch snacks to share.</p><span class="fprice">€18.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Sharing</span><img loading="lazy" src="assets/party-fusion-platter.jpg" alt="Party Fusion Platter" onerror="this.classList.add('noimg')"><div class="fallback">📦</div></div>
+          <div class="fbody"><h4>Party Fusion Platter</h4><p>Feeds 4-5, curries, rice and Dutch sides.</p><span class="fprice">€32.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Sharing</span><img loading="lazy" src="assets/dutch-bites-bucket.jpg" alt="Dutch Bites Bucket" onerror="this.classList.add('noimg')"><div class="fallback">📦</div></div>
+          <div class="fbody"><h4>Dutch Bites Bucket</h4><p>Bitterballen, kroket and kaassoufflé, loaded.</p><span class="fprice">€16.0</span></div>
+        </article>
+        <article class="fcard">
+          <div class="fthumb"><span class="fflag">Sharing</span><img loading="lazy" src="assets/mega-biryani-box.jpg" alt="Mega Biryani Box" onerror="this.classList.add('noimg')"><div class="fallback">📦</div></div>
+          <div class="fbody"><h4>Mega Biryani Box</h4><p>A jumbo biryani feast for the whole table.</p><span class="fprice">€28.0</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="logo"><span class="lw">Indutchian</span><span class="lu"><i></i><i></i></span></span>
+  <div>Two cultures. One table. Where spice learns Dutch.</div>
+  <div style="margin-top:8px;font-size:.82rem;letter-spacing:1px;opacity:.8">Indutchian by Faye &amp; Rohith · Founders</div>
+</footer>
+
+</body>
+</html>
