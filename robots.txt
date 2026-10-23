@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.indutchian.com/sitemap.xml
+Sitemap: https://776vvfyn45-commits.github.io/indutchian/sitemap.xml
