@@ -138,6 +138,74 @@
   .campcard p{font-size:.92rem;color:rgba(250,243,231,.75);margin-bottom:16px;line-height:1.55}
   .campcard .campmeta{font-size:.78rem;letter-spacing:1px;text-transform:uppercase;color:rgba(250,243,231,.5)}
 
+
+  /* CAMPAIGN CREATIVES (concept mock-ups) */
+  .campgrid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) !important}
+  .cmock{position:relative;border-radius:14px;overflow:hidden;margin:-8px -8px 20px;aspect-ratio:1/1;background:#0d0b12;box-shadow:0 14px 34px rgba(0,0,0,.35);isolation:isolate}
+  .cmock img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+  .campcard:hover .cmock img.bg{transform:scale(1.07)}
+  .cmock .tagc{position:absolute;left:10px;bottom:6px;z-index:6;font-size:.55rem;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.75);background:rgba(0,0,0,.45);padding:3px 8px;border-radius:12px;backdrop-filter:blur(3px)}
+  .cmock .ig{position:absolute;left:0;right:0;top:0;z-index:6;display:flex;align-items:center;gap:8px;padding:9px 12px;background:linear-gradient(180deg,rgba(0,0,0,.6),transparent);color:#fff;font-size:.72rem;font-weight:600}
+  .cmock .ig img{width:24px;height:24px;border-radius:50%;background:#FAF3E7;padding:2px}
+  .cmock .ig span{opacity:.7;font-weight:400;margin-left:auto;letter-spacing:2px}
+  /* 1 split post */
+  .cm1 .half{position:absolute;top:0;bottom:0;width:50%;overflow:hidden}
+  .cm1 .half.l{left:0}.cm1 .half.r{right:0}
+  .cm1 .half img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+  .campcard:hover .cm1 .half img{transform:scale(1.08)}
+  .cm1 .half:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.7))}
+  .cm1 .half.l:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(242,103,34,.28),transparent 60%)}
+  .cm1 .half.r:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(225deg,rgba(33,70,139,.35),transparent 60%)}
+  .cm1 .lab{position:absolute;bottom:62px;z-index:3;font-family:'Anton',sans-serif;letter-spacing:2px;color:#fff;font-size:1.05rem;text-transform:uppercase}
+  .cm1 .half.l .lab{left:12px}.cm1 .half.r .lab{right:12px}
+  .cm1 .seam{position:absolute;left:50%;top:0;bottom:0;width:3px;margin-left:-1.5px;z-index:4;background:linear-gradient(180deg,#F26722,#fff,#21468B)}
+  .cm1 .badge{position:absolute;left:50%;top:50%;z-index:5;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:#FAF3E7;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.4);animation:cmPulse 2.6s ease-in-out infinite}
+  .cm1 .badge img{width:38px;height:38px}
+  .cm1 .cap{position:absolute;left:0;right:0;bottom:0;z-index:5;padding:10px 12px 24px;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:.92rem;line-height:1.25;text-align:center}
+  @keyframes cmPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+  /* 2 reel */
+  .cm2 img.bg{filter:saturate(1.1) brightness(.72)}
+  .cm2:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 70% 25%,rgba(230,46,139,.4),transparent 55%),linear-gradient(0deg,rgba(0,0,0,.85),transparent 55%)}
+  .cm2 .eq{position:absolute;z-index:3;left:14px;right:60px;top:27%;color:#fff;font-family:'Anton',sans-serif;text-transform:uppercase;letter-spacing:1px;line-height:1.05;font-size:1.3rem;text-shadow:0 3px 14px rgba(0,0,0,.6)}
+  .cm2 .eq em{font-style:normal;color:#B6E62E}
+  .cm2 .eq b{display:inline-block;color:#E62E8B;font-size:2.1rem;vertical-align:-6px;animation:cmQ 1.4s ease-in-out infinite}
+  @keyframes cmQ{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.2)}}
+  .cm2 .side{position:absolute;z-index:4;right:10px;bottom:30px;display:flex;flex-direction:column;gap:14px;align-items:center;color:#fff;font-size:.62rem}
+  .cm2 .side i{display:block;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(3px);position:relative}
+  .cm2 .side i:after{content:"";position:absolute;left:8px;top:9px;width:14px;height:12px;background:#fff;clip-path:polygon(50% 100%,0 35%,15% 8%,50% 25%,85% 8%,100% 35%)}
+  .cm2 .com{position:absolute;z-index:4;left:12px;right:56px;bottom:26px;display:flex;flex-direction:column;gap:6px}
+  .cm2 .com div{background:rgba(255,255,255,.16);backdrop-filter:blur(4px);color:#fff;font-size:.6rem;padding:5px 10px;border-radius:12px;width:fit-content;max-width:100%;animation:cmUp .8s both}
+  .cm2 .com div:nth-child(2){animation-delay:.3s}
+  .cm2 .com div b{color:#B6E62E;font-weight:600}
+  @keyframes cmUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .cm2 .stk{position:absolute;z-index:4;left:14px;top:46px;background:#B6E62E;color:#1A1A2E;font-weight:700;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:10px;transform:rotate(-4deg)}
+  /* 3 festival poster */
+  .cm3 img.bg{filter:saturate(1.2) brightness(.7)}
+  .cm3:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 20% 20%,rgba(230,46,139,.55),transparent 50%),radial-gradient(circle at 85% 80%,rgba(91,42,134,.7),transparent 55%),linear-gradient(0deg,rgba(10,0,30,.85),transparent 60%);mix-blend-mode:normal}
+  .cm3 .ttl{position:absolute;z-index:3;left:14px;right:14px;top:44px;font-family:'Anton',sans-serif;text-transform:uppercase;color:#fff;font-size:2.3rem;line-height:.92;letter-spacing:1px;text-shadow:0 4px 18px rgba(0,0,0,.5)}
+  .cm3 .ttl span{display:block;color:#B6E62E}
+  .cm3 .sub{position:absolute;z-index:3;left:14px;top:46%;font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#F0B8D8}
+  .cm3 .lineup{position:absolute;z-index:3;left:14px;right:14px;bottom:28px;display:flex;gap:6px;flex-wrap:wrap}
+  .cm3 .lineup i{font-style:normal;font-family:'Anton',sans-serif;letter-spacing:1px;font-size:.78rem;color:#1A1A2E;background:#B6E62E;padding:4px 10px;border-radius:4px;text-transform:uppercase}
+  .cm3 .lineup i.q{background:rgba(255,255,255,.14);color:#fff;border:1px dashed rgba(255,255,255,.5);animation:cmBlink 2s ease-in-out infinite}
+  .cm3 .lineup i.q:nth-child(3){animation-delay:.5s}.cm3 .lineup i.q:nth-child(4){animation-delay:1s}
+  @keyframes cmBlink{50%{opacity:.45}}
+  .cm3 .early{position:absolute;z-index:4;right:12px;top:30%;background:#E62E8B;color:#fff;font-weight:700;font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 11px;border-radius:50%;width:72px;height:72px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.15;transform:rotate(10deg);box-shadow:0 8px 20px rgba(0,0,0,.4)}
+  /* 4 carousel */
+  .cm4 img.bg{filter:brightness(.78)}
+  .cm4:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.82),transparent 62%)}
+  .cm4 .cnt{position:absolute;z-index:5;right:12px;top:40px;background:rgba(0,0,0,.55);color:#fff;font-size:.62rem;padding:3px 9px;border-radius:12px;letter-spacing:1px}
+  .cm4 .ttl{position:absolute;z-index:3;left:14px;right:14px;bottom:106px;font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;line-height:1.15;color:#fff}
+  .cm4 .ttl em{color:#E6C15C;font-style:italic}
+  .cm4 .thumbs{position:absolute;z-index:4;left:12px;right:12px;bottom:34px;display:flex;gap:8px}
+  .cm4 .thumbs div{flex:1;height:58px;border-radius:8px;overflow:hidden;border:2px solid rgba(255,255,255,.35);background:#222}
+  .cm4 .thumbs div:first-child{border-color:#E6C15C}
+  .cm4 .thumbs img{width:100%;height:100%;object-fit:cover}
+  .cm4 .dots2{position:absolute;z-index:4;left:0;right:0;bottom:20px;display:flex;justify-content:center;gap:5px}
+  .cm4 .dots2 i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5)}
+  .cm4 .dots2 i:first-child{background:#E6C15C;width:14px;border-radius:4px}
+  .cm4 .ask{position:absolute;z-index:5;right:12px;bottom:34px;display:none}
+
   /* CAREER */
   .career{background:var(--cream)}
   .career .eyebrow{color:var(--saffron)}
@@ -340,6 +408,11 @@
     <p class="sub">Four signature campaigns built for a fusion food &amp; events brand — from brand story to viral engagement to festival hype to catering leads.</p>
     <div class="campgrid">
       <div class="campcard">
+        <div class="cmock cm1"><div class="ig"><img src="assets/Indutchian - Emblem.svg" alt=""> indutchian <span>···</span></div>
+        <div class="half l"><img src="assets/samosa-chaat.jpg" alt="Indian dish"><div class="lab">India</div></div>
+        <div class="half r"><img src="assets/bitterballen.jpg" alt="Dutch dish"><div class="lab">Holland</div></div>
+        <div class="seam"></div><div class="badge"><img src="assets/Indutchian - Emblem.svg" alt=""></div>
+        <div class="cap">Where India meets the Netherlands</div><span class="tagc">Concept creative</span></div>
         <span class="camptag">Brand Launch</span>
         <h3>Two Cultures, One Table</h3>
         <div class="campline">"Where India meets the Netherlands."</div>
@@ -347,6 +420,12 @@
         <div class="campmeta">Instagram · Facebook · Google Business</div>
       </div>
       <div class="campcard">
+        <div class="cmock cm2"><img class="bg" src="assets/frikandel.jpg" alt="Dutch snack">
+        <div class="stk">Guess the fusion</div>
+        <div class="eq">Dutch snack<br>+ <em>Indian spice</em><br>= <b>?</b></div>
+        <div class="side"><i></i>12.4k<i></i>842</div>
+        <div class="com"><div><b>@mira</b> frikandel tikka?! 😮</div><div><b>@dev_k</b> that's a masala kroket 🔥</div></div>
+        <span class="tagc">Concept creative</span></div>
         <span class="camptag">Engagement</span>
         <h3>Guess the Fusion</h3>
         <div class="campline">"Dutch snack + Indian spice = ???"</div>
@@ -354,6 +433,12 @@
         <div class="campmeta">TikTok · Instagram Reels</div>
       </div>
       <div class="campcard">
+        <div class="cmock cm3"><img class="bg" src="assets/event-dj-crowd.jpg" alt="Festival crowd">
+        <div class="ttl">Masala<span>Nights</span></div>
+        <div class="sub">One beat, two cultures</div>
+        <div class="early">Early<br>bird<br>tickets</div>
+        <div class="lineup"><i>Line-up</i><i class="q">???</i><i class="q">???</i><i class="q">???</i></div>
+        <span class="tagc">Concept creative</span></div>
         <span class="camptag">Festival Hype</span>
         <h3>Masala Nights</h3>
         <div class="campline">"One beat, two cultures."</div>
@@ -361,6 +446,11 @@
         <div class="campmeta">Instagram · TikTok · Facebook Events · Email</div>
       </div>
       <div class="campcard">
+        <div class="cmock cm4"><img class="bg" src="assets/event-couple.jpg" alt="Wedding catering">
+        <div class="ig"><img src="assets/Indutchian - Emblem.svg" alt=""> indutchian <span>···</span></div><div class="cnt">1 / 5</div>
+        <div class="ttl">We catered a<br><em>Dutch-Indian</em> wedding</div>
+        <div class="thumbs"><div><img src="assets/party-fusion-platter.jpg" alt=""></div><div><img src="assets/fusion-thali.jpg" alt=""></div><div><img src="assets/dutch-bites-bucket.jpg" alt=""></div></div>
+        <div class="dots2"><i></i><i></i><i></i><i></i><i></i></div><span class="tagc">Concept creative</span></div>
         <span class="camptag">Lead Generation</span>
         <h3>Cater the Fusion</h3>
         <div class="campline">"Bring the fusion to your table."</div>
@@ -438,5 +528,6 @@
 })();
 </script>
 
+<script src="fx.js"></script>
 </body>
 </html>
